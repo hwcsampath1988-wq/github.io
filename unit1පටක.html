@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 ශ්‍රේණිය | 1 පාඩම - ජීවී පටක | ආදර්ශ ප්‍රශ්න පත්‍රය</title>
+    <style>
+        body { font-family: 'Abhaya Libre', 'Iskoola Pota', Arial, sans-serif; background-color: #f0f4f8; color: #2c3e50; line-height: 1.6; margin: 0; padding: 20px; }
+        .paper-container { max-width: 900px; margin: 0 auto; background: #ffffff; padding: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 8px; }
+        .header { text-align: center; border-bottom: 3px solid #34495e; padding-bottom: 20px; margin-bottom: 30px; }
+        .header h1 { margin: 0; font-size: 24px; color: #2980b9; }
+        .header h2 { margin: 10px 0 0 0; font-size: 18px; font-weight: normal; }
+        .instructions { font-style: italic; margin-bottom: 20px; background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; }
+        .student-info { background-color: #fcf3cf; padding: 20px; border-radius: 5px; margin-bottom: 30px; border: 1px solid #f1c40f; }
+        .student-info label { font-weight: bold; font-size: 18px; }
+        .student-info input[type="text"] { width: 100%; padding: 10px; margin-top: 10px; font-size: 16px; border: 1px solid #bdc3c7; border-radius: 4px; box-sizing: border-box; }
+        .question-block { margin-bottom: 35px; page-break-inside: avoid; border-bottom: 1px dashed #ecf0f1; padding-bottom: 15px; }
+        .question-text { font-weight: bold; font-size: 17px; margin-bottom: 15px; }
+        .options-container { margin-left: 20px; }
+        .option-label { display: block; margin-bottom: 10px; cursor: pointer; padding: 5px; border-radius: 4px; transition: background-color 0.2s; }
+        .option-label:hover { background-color: #f1f2f6; }
+        input[type="radio"] { margin-right: 10px; transform: scale(1.2); }
+        .explanation-box { display: none; margin-top: 15px; padding: 15px; border-radius: 5px; font-size: 15px; line-height: 1.6; }
+        .submit-btn { display: block; width: 100%; padding: 15px; background-color: #27ae60; color: white; border: none; font-size: 18px; font-weight: bold; cursor: pointer; border-radius: 5px; margin-top: 40px; transition: background-color 0.3s; }
+        .submit-btn:hover { background-color: #219a52; }
+        .submit-btn:disabled { background-color: #95a5a6; cursor: not-allowed; }
+        #result-box { display: none; text-align: center; margin-top: 30px; padding: 20px; border-radius: 5px; font-size: 20px; font-weight: bold; }
+        .footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 2px solid #bdc3c7; }
+        .footer p { margin: 5px 0; font-size: 18px; }
+        .footer span { font-size: 14px; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+
+<div class="paper-container">
+    <div class="header">
+        <h1>11 ශ්‍රේණිය | 1 පාඩම - ජීවී පටක</h1>
+        <h2>බහුවරණ ප්‍රශ්න 25 කින් යුත් ඇගයීම</h2>
+    </div>
+
+    <div class="instructions">
+        * "පිළිතුරු පරීක්ෂා කරන්න" බොත්තම එබූ පසු ඔබට නිවැරදි පිළිතුරු සහ විද්‍යාත්මක පැහැදිලි කිරීම් බලාගත හැක.
+    </div>
+
+    <div class="student-info">
+        <label for="studentNameInput">ශිෂ්‍යයාගේ නම:</label>
+        <input type="text" id="studentNameInput" placeholder="ඔබේ සම්පූර්ණ නම මෙහි ඇතුළත් කරන්න" required>
+    </div>
+
+    <form id="quizForm">
+
+        <div class="question-block" id="qb1"><div class="question-text">01. ශාක පටක ප්‍රධාන වශයෙන් බෙදෙන කාණ්ඩ 2 කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q1" value="1"> (1) අපිච්ඡද හා පේශි</label><label class="option-label"><input type="radio" name="q1" value="2"> (2) විභාජක හා ස්ථිර</label><label class="option-label"><input type="radio" name="q1" value="3"> (3) සරල හා සංකීර්ණ</label><label class="option-label"><input type="radio" name="q1" value="4"> (4) ශෛලම හා ප්ලෝයම</label></div></div>
+        
+        <div class="question-block" id="qb2"><div class="question-text">02. අග්‍රස්ථ විභාජක පටක බහුලව පිහිටන්නේ ශාකයේ කුමන ස්ථානවලද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q2" value="1"> (1) පත්‍රවල</label><label class="option-label"><input type="radio" name="q2" value="2"> (2) කඳේ මහත වැඩි කරන ස්ථානවල</label><label class="option-label"><input type="radio" name="q2" value="3"> (3) මුල් සහ කඳන් වල අග්‍රවල</label><label class="option-label"><input type="radio" name="q2" value="4"> (4) පුෂ්ප තුළ</label></div></div>
+
+        <div class="question-block" id="qb3"><div class="question-text">03. පාර්ශ්වික විභාජක පටක (Lateral meristems) වලට උදාහරණයක් වන්නේ කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q3" value="1"> (1) කැම්බියම</label><label class="option-label"><input type="radio" name="q3" value="2"> (2) මෘදුස්තර</label><label class="option-label"><input type="radio" name="q3" value="3"> (3) අග්‍රස්ථ අංකුරය</label><label class="option-label"><input type="radio" name="q3" value="4"> (4) පත්‍ර අක්ෂය</label></div></div>
+
+        <div class="question-block" id="qb4"><div class="question-text">04. සරල ස්ථිර පටක 3 නිවැරදිව දක්වා ඇති වරණය තෝරන්න.</div><div class="options-container"><label class="option-label"><input type="radio" name="q4" value="1"> (1) මෘදුස්තර, දෘඪස්තර, ස්ථූලකෝණස්තර</label><label class="option-label"><input type="radio" name="q4" value="2"> (2) ශෛලමය, ප්ලෝයමය, මෘදුස්තර</label><label class="option-label"><input type="radio" name="q4" value="3"> (3) රුධිරය, අස්ථි, කාටිලේජ</label><label class="option-label"><input type="radio" name="q4" value="4"> (4) වාහිනී, වාහකාභ, තන්තු</label></div></div>
+
+        <div class="question-block" id="qb5"><div class="question-text">05. ආහාර නිෂ්පාදනයට දායක වන හරිතලව (Chloroplasts) බහුලව අඩංගු මෘදුස්තර සෛල හැඳින්වෙන්නේ කෙසේද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q5" value="1"> (1) වායුස්තර</label><label class="option-label"><input type="radio" name="q5" value="2"> (2) ක්ලෝරෙන්ස්තර</label><label class="option-label"><input type="radio" name="q5" value="3"> (3) ස්ථූලකෝණස්තර</label><label class="option-label"><input type="radio" name="q5" value="4"> (4) දෘඪස්තර</label></div></div>
+
+        <div class="question-block" id="qb6"><div class="question-text">06. නෙළුම් වැනි ජලජ ශාකවලට ජලය මත පාවීම සඳහා ආධාර වන වාතය පිරුණු කුහර සහිත මෘදුස්තර පටකය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q6" value="1"> (1) ක්ලෝරෙන්ස්තර</label><label class="option-label"><input type="radio" name="q6" value="2"> (2) ස්ථූලකෝණස්තර</label><label class="option-label"><input type="radio" name="q6" value="3"> (3) වායුස්තර</label><label class="option-label"><input type="radio" name="q6" value="4"> (4) දෘඪස්තර</label></div></div>
+
+        <div class="question-block" id="qb7"><div class="question-text">07. දෘඪස්තර පටකයේ (Sclerenchyma) සෛල බිත්ති ප්‍රධාන වශයෙන් ඝන වී ඇත්තේ කුමන රසායනික ද්‍රව්‍යය තැන්පත් වීමෙන්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q7" value="1"> (1) සෙලියුලෝස්</label><label class="option-label"><input type="radio" name="q7" value="2"> (2) පෙක්ටීන්</label><label class="option-label"><input type="radio" name="q7" value="3"> (3) ලිග්නින්</label><label class="option-label"><input type="radio" name="q7" value="4"> (4) සුබරින්</label></div></div>
+
+        <div class="question-block" id="qb8"><div class="question-text">08. සජීවී, දික් වූ හැඩයක් ඇති, සෛල බිත්තියේ කොන්වලින් පමණක් ඝන වූ බිත්ති සහිත පටකය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q8" value="1"> (1) මෘදුස්තර</label><label class="option-label"><input type="radio" name="q8" value="2"> (2) ස්ථූලකෝණස්තර</label><label class="option-label"><input type="radio" name="q8" value="3"> (3) දෘඪස්තර</label><label class="option-label"><input type="radio" name="q8" value="4"> (4) කැම්බියම</label></div></div>
+
+        <div class="question-block" id="qb9"><div class="question-text">09. සම්පූර්ණයෙන්ම මළ සෛල වලින් යුක්ත වන, ශාකයට දැඩි යාන්ත්‍රික සවිවර බවක් (Mechanical strength) ලබා දෙන පටකය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q9" value="1"> (1) මෘදුස්තර</label><label class="option-label"><input type="radio" name="q9" value="2"> (2) ස්ථූලකෝණස්තර</label><label class="option-label"><input type="radio" name="q9" value="3"> (3) දෘඪස්තර</label><label class="option-label"><input type="radio" name="q9" value="4"> (4) අපිචර්මය</label></div></div>
+
+        <div class="question-block" id="qb10"><div class="question-text">10. පහත දැක්වෙන ඒවායින් 'ශෛලම පටකයට' (Xylem) අයත් නොවන සෛල වර්ගය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q10" value="1"> (1) වාහිනී</label><label class="option-label"><input type="radio" name="q10" value="2"> (2) වාහකාභ</label><label class="option-label"><input type="radio" name="q10" value="3"> (3) පෙරහන් නළ</label><label class="option-label"><input type="radio" name="q10" value="4"> (4) ශෛලම තන්තු</label></div></div>
+
+        <div class="question-block" id="qb11"><div class="question-text">11. ප්ලෝයම පටකයේ (Phloem) අඩංගු ප්‍රධාන සෛල වර්ග 4 වන්නේ,</div><div class="options-container"><label class="option-label"><input type="radio" name="q11" value="1"> (1) පෙරහන් නළ, සහකාර සෛල, ප්ලෝයම මෘදුස්තර, ප්ලෝයම තන්තු</label><label class="option-label"><input type="radio" name="q11" value="2"> (2) වාහිනී, වාහකාභ, මෘදුස්තර, තන්තු</label><label class="option-label"><input type="radio" name="q11" value="3"> (3) මෘදුස්තර, ස්ථූලකෝණස්තර, දෘඪස්තර, කැම්බියම</label><label class="option-label"><input type="radio" name="q11" value="4"> (4) රතු රුධිරාණු, සුදු රුධිරාණු, පට්ටිකා, ප්ලාස්මාව</label></div></div>
+
+        <div class="question-block" id="qb12"><div class="question-text">12. ශාක තුළ මුලේ සිට පත්‍ර දක්වා ජලය සහ ඛනිජ ලවණ ඉහළට පරිවහනය කරන්නේ කුමන පටකයෙන්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q12" value="1"> (1) ප්ලෝයමය</label><label class="option-label"><input type="radio" name="q12" value="2"> (2) ශෛලමය</label><label class="option-label"><input type="radio" name="q12" value="3"> (3) කැම්බියම</label><label class="option-label"><input type="radio" name="q12" value="4"> (4) මෘදුස්තර</label></div></div>
+
+        <div class="question-block" id="qb13"><div class="question-text">13. සත්ත්ව පටක ප්‍රධාන වර්ග 4 නිවැරදිව දක්වා ඇති විකල්පය තෝරන්න.</div><div class="options-container"><label class="option-label"><input type="radio" name="q13" value="1"> (1) අපිච්ඡද, සම්බන්ධක, පේශී, ස්නායු</label><label class="option-label"><input type="radio" name="q13" value="2"> (2) අස්ථි, රුධිරය, කාටිලේජ, මේද</label><label class="option-label"><input type="radio" name="q13" value="3"> (3) මෘදුස්තර, දෘඪස්තර, ශෛලම, ප්ලෝයම</label><label class="option-label"><input type="radio" name="q13" value="4"> (4) සිනිඳු, කංකාල, හෘද, ස්නායු</label></div></div>
+
+        <div class="question-block" id="qb14"><div class="question-text">14. සත්ත්ව දේහයේ නිදහස් පෘෂ්ඨයන් ආවරණය කරමින් පාදස්ථ පටලයක් (Basement membrane) මත පිහිටන පටකය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q14" value="1"> (1) පේශී පටකය</label><label class="option-label"><input type="radio" name="q14" value="2"> (2) සම්බන්ධක පටකය</label><label class="option-label"><input type="radio" name="q14" value="3"> (3) අපිච්ඡද පටකය</label><label class="option-label"><input type="radio" name="q14" value="4"> (4) ස්නායු පටකය</label></div></div>
+
+        <div class="question-block" id="qb15"><div class="question-text">15. රුධිර කේශනාලිකා සහ පෙනහලුවල ගර්ත බිත්ති සෑදී ඇති අපිච්ඡද වර්ගය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q15" value="1"> (1) සරල ඝනාකාර</label><label class="option-label"><input type="radio" name="q15" value="2"> (2) සරල ස්තම්භාකාර</label><label class="option-label"><input type="radio" name="q15" value="3"> (3) සරල ශල්කමය</label><label class="option-label"><input type="radio" name="q15" value="4"> (4) සංක්‍රාන්ති</label></div></div>
+
+        <div class="question-block" id="qb16"><div class="question-text">16. මිනිස් මූත්‍රාශයේ බිත්තියේ දැකගත හැකි, ඇදීමේ හැකියාව සහිත (Stretchable) අපිච්ඡදය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q16" value="1"> (1) පක්ෂ්මල අපිච්ඡදය</label><label class="option-label"><input type="radio" name="q16" value="2"> (2) සංක්‍රාන්ති අපිච්ඡදය</label><label class="option-label"><input type="radio" name="q16" value="3"> (3) ස්ථරීභූත අපිච්ඡදය</label><label class="option-label"><input type="radio" name="q16" value="4"> (4) ග්‍රන්ථිමය අපිච්ඡදය</label></div></div>
+
+        <div class="question-block" id="qb17"><div class="question-text">17. තරලමය අන්තර්සෛලීය පදාර්ථයක් (ප්ලාස්මාවක්) සහිත එකම සම්බන්ධක පටකය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q17" value="1"> (1) අස්ථි</label><label class="option-label"><input type="radio" name="q17" value="2"> (2) රුධිරය</label><label class="option-label"><input type="radio" name="q17" value="3"> (3) කාටිලේජ</label><label class="option-label"><input type="radio" name="q17" value="4"> (4) මේද පටකය</label></div></div>
+
+        <div class="question-block" id="qb18"><div class="question-text">18. මිනිස් දේහයේ බහුලවම පැතිරී ඇති පටක වර්ගය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q18" value="1"> (1) පේශී පටකය</label><label class="option-label"><input type="radio" name="q18" value="2"> (2) සම්බන්ධක පටකය</label><label class="option-label"><input type="radio" name="q18" value="3"> (3) ස්නායු පටකය</label><label class="option-label"><input type="radio" name="q18" value="4"> (4) අපිච්ඡද පටකය</label></div></div>
+
+        <div class="question-block" id="qb19"><div class="question-text">19. අස්ථි පටකයේ අන්තර්සෛලීය පදාර්ථය දැඩි වීම සඳහා තැන්පත් වී ඇති ප්‍රධාන ඛනිජ ලවණ 2 මොනවාද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q19" value="1"> (1) යකඩ හා සෝඩියම්</label><label class="option-label"><input type="radio" name="q19" value="2"> (2) කැල්සියම් හා පොස්පරස්</label><label class="option-label"><input type="radio" name="q19" value="3"> (3) පොටෑසියම් හා අයඩීන්</label><label class="option-label"><input type="radio" name="q19" value="4"> (4) සල්ෆර් හා කාබන්</label></div></div>
+
+        <div class="question-block" id="qb20"><div class="question-text">20. අපගේ කැමැත්තට අනුව පාලනය කළ හැකි (සෛච්ඡික) පේශි වර්ගය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q20" value="1"> (1) සිනිඳු පේශී</label><label class="option-label"><input type="radio" name="q20" value="2"> (2) හෘද පේශී</label><label class="option-label"><input type="radio" name="q20" value="3"> (3) කංකාල පේශී</label><label class="option-label"><input type="radio" name="q20" value="4"> (4) අන්ත්‍ර පේශී</label></div></div>
+
+        <div class="question-block" id="qb21"><div class="question-text">21. සෛල එකිනෙක සම්බන්ධ කරන "අන්තර්ස්ථාපිත මඬල" (Intercalated discs) දැකගත හැක්කේ කුමන පේශි පටකයේ පමණක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q21" value="1"> (1) කංකාල පේශී</label><label class="option-label"><input type="radio" name="q21" value="2"> (2) හෘද පේශී</label><label class="option-label"><input type="radio" name="q21" value="3"> (3) සිනිඳු පේශී</label><label class="option-label"><input type="radio" name="q21" value="4"> (4) ආමාශ පේශී</label></div></div>
+
+        <div class="question-block" id="qb22"><div class="question-text">22. අපගේ පාලනයකින් තොරව (අසෛච්ඡිකව) ක්‍රියාත්මක වන, දෙකෙළවර සිහින් වූ තර්කු හැඩැති, තීරු රහිත පේශී මොනවාද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q22" value="1"> (1) සිනිඳු පේශී</label><label class="option-label"><input type="radio" name="q22" value="2"> (2) කංකාල පේශී</label><label class="option-label"><input type="radio" name="q22" value="3"> (3) හෘද පේශී</label><label class="option-label"><input type="radio" name="q22" value="4"> (4) ද්විශීර්ෂික පේශී</label></div></div>
+
+        <div class="question-block" id="qb23"><div class="question-text">23. ස්නායු පටකයේ ව්‍යුහමය හා කෘත්‍යමය ඒකකය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q23" value="1"> (1) නෙෆ්‍රෝනය</label><label class="option-label"><input type="radio" name="q23" value="2"> (2) නියුරෝනය</label><label class="option-label"><input type="radio" name="q23" value="3"> (3) ඇල්වෙයෝලසය</label><label class="option-label"><input type="radio" name="q23" value="4"> (4) සෛල දේහය</label></div></div>
+
+        <div class="question-block" id="qb24"><div class="question-text">24. නියුරෝනයකට (ස්නායු සෛලයකට) පණිවිඩ රැගෙන එන (ආවේග ලබාගන්නා) කෙටි, අතු බෙදුණු කොටස හැඳින්වෙන්නේ කුමන නමකින්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q24" value="1"> (1) අක්සනය</label><label class="option-label"><input type="radio" name="q24" value="2"> (2) මයලින් කොපුව</label><label class="option-label"><input type="radio" name="q24" value="3"> (3) අනුශාඛිකාව</label><label class="option-label"><input type="radio" name="q24" value="4"> (4) සෛල දේහය</label></div></div>
+
+        <div class="question-block" id="qb25"><div class="question-text">25. රුධිරයේ ඇති රතු රුධිරාණුවල (Red Blood Cells) හැඩය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q25" value="1"> (1) ද්විඋත්තල</label><label class="option-label"><input type="radio" name="q25" value="2"> (2) ද්විඅවතල තැටියාකාර</label><label class="option-label"><input type="radio" name="q25" value="3"> (3) අක්‍රමවත්</label><label class="option-label"><input type="radio" name="q25" value="4"> (4) තර්කු හැඩැති</label></div></div>
+
+        <button type="button" id="mainSubmitBtn" class="submit-btn" onclick="calculateAndDisplayScore()">පිළිතුරු පරීක්ෂා කරන්න</button>
+        <div id="result-box"></div>
+    </form>
+
+    <div class="footer">
+        <p><strong>සැකසුම: චතුරංග සම්පත් (B.Sc)</strong></p>
+        <span>රසායන විද්‍යා උත්තර පත්‍ර පරීක්ෂක</span>
+    </div>
+</div>
+
+<script>
+    const answers = {
+        q1: "2", q2: "3", q3: "1", q4: "1", q5: "2", q6: "3", q7: "3", q8: "2", q9: "3", q10: "3",
+        q11: "1", q12: "2", q13: "1", q14: "3", q15: "3", q16: "2", q17: "2", q18: "2", q19: "2", q20: "3",
+        q21: "2", q22: "1", q23: "2", q24: "3", q25: "2"
+    };
+
+    const explanations = {
+        q1: `ශාක පටක ප්‍රධාන වශයෙන් විභාජක පටක (නිරන්තරයෙන් බෙදෙන) සහ ස්ථිර පටක (බෙදීම නතර වූ) ලෙස කාණ්ඩ 2කට බෙදේ.`,
+        q2: `අග්‍රස්ථ විභාජක පටක (Apical meristems) පිහිටන්නේ ශාකයේ දිග වැඩිකරන ස්ථාන වන මුල් අග්‍ර සහ කඳේ අග්‍රවලය.`,
+        q3: `පාර්ශ්වික විභාජක පටක මගින් ශාකයේ මහත (ද්විතියික වර්ධනය) ඇති කරයි. ඊට ප්‍රධාන උදාහරණය කැම්බියමයි.`,
+        q4: `සරල ස්ථිර පටක යනු එකම වර්ගයේ සෛල වලින් සෑදුණු පටක වේ. මෘදුස්තර, ස්ථූලකෝණස්තර සහ දෘඪස්තර ඊට අයත් වේ.`,
+        q5: `හරිතලව (Chloroplasts) බහුලව අඩංගු, ප්‍රභාසංශ්ලේෂණය සිදුකරන මෘදුස්තර සෛල විශේෂය ක්ලෝරෙන්ස්තර (Chlorenchyma) ලෙස හැඳින්වේ.`,
+        q6: `ජලජ ශාකවලට පාවීමට උදව් දෙන වාතය පිරුණු කුහර සහිත පටකය වායුස්තර (Aerenchyma) වේ.`,
+        q7: `දෘඪස්තර පටකයේ සෛල බිත්ති 'ලිග්නින්' (Lignin) තැන්පත් වීමෙන් ඉතා තද වී ඇත. මේවා මළ සෛල වේ.`,
+        q8: `ස්ථූලකෝණස්තර සෛල සජීවී වන අතර ඒවායේ සෛල බිත්තියේ කොන් පෙක්ටීන් හා සෙලියුලෝස් මගින් ඝන වී ඇත.`,
+        q9: `දෘඪස්තර පටකය (Sclerenchyma) ලිග්නින් තැන්පත් වූ මළ සෛල වලින් යුක්ත වන අතර ශාකයට දැඩි යාන්ත්‍රික සවිවර බවක් ලබා දෙයි.`,
+        q10: `පෙරහන් නළ (Sieve tubes) අයත් වන්නේ ප්ලෝයම පටකයටයි. වාහිනී, වාහකාභ, ශෛලම මෘදුස්තර හා තන්තු ශෛලමයට අයත් වේ.`,
+        q11: `ප්ලෝයම පටකයේ සංරචක 4 වනුයේ පෙරහන් නළ, සහකාර සෛල, ප්ලෝයම මෘදුස්තර සහ ප්ලෝයම තන්තු ය.`,
+        q12: `ජලය හා ඛනිජ ලවණ ඉහළට පරිවහනය කරන්නේ ශෛලම පටකය මගිනි. ආහාර පරිවහනය ප්ලෝයමය මගින් සිදු වේ.`,
+        q13: `සත්ත්ව පටක ප්‍රධාන වර්ග 4කි: අපිච්ඡද පටක, සම්බන්ධක පටක, පේශී පටක සහ ස්නායු පටක.`,
+        q14: `අපිච්ඡද පටක සෑමවිටම පාදස්ථ පටලයක් (Basement membrane) මත පිහිටමින් දේහයේ පෘෂ්ඨයන් ආවරණය කරයි.`,
+        q15: `වායු සහ ද්‍රව්‍ය හුවමාරුවට පහසු වන පරිදි රුධිර කේශනාලිකා සහ ගර්ත බිත්ති තනි සෛල ස්තරයකින් යුත් සරල ශල්කමය අපිච්ඡදයෙන් සෑදී ඇත.`,
+        q16: `මූත්‍රා පිරෙන විට ඇදීමේ හැකියාව (Stretchable) අවශ්‍ය වන බැවින් මූත්‍රාශ බිත්තියේ ඇත්තේ සංක්‍රාන්ති අපිච්ඡදයයි (Transitional epithelium).`,
+        q17: `රුධිරය යනු රුධිර ප්ලාස්මාව නමැති තරලමය අන්තර්සෛලීය පදාර්ථයක රුධිරාණු ගිලී ඇති සම්බන්ධක පටකයකි.`,
+        q18: `සත්ත්ව දේහයේ බහුලවම පැතිරී ඇති, විවිධ අවයව එකිනෙක සම්බන්ධ කරන පටකය සම්බන්ධක පටකයයි (Connective tissue).`,
+        q19: `අස්ථි පටකය දැඩි වීමට එහි අන්තර්සෛලීය පදාර්ථයේ කැල්සියම් සහ පොස්පරස් ලවණ තැන්පත් වී ඇත.`,
+        q20: `කංකාල පේශී (Skeletal muscles) අපගේ කැමැත්තට අනුව (සෛච්ඡිකව) පාලනය කළ හැක. මේවා අස්ථි වලට සම්බන්ධ වී පවතී.`,
+        q21: `අන්තර්ස්ථාපිත මඬල (Intercalated discs) දැකගත හැක්කේ හෘද පේශී වල (Cardiac muscles) පමණි.`,
+        q22: `සිනිඳු පේශී (Smooth muscles) අසෛච්ඡිකව ක්‍රියාත්මක වන අතර ඒවා තර්කු හැඩැති, තීරු රහිත පේශී වේ (උදා: ආමාශ බිත්තිය).`,
+        q23: `ස්නායු පද්ධතියේ සහ පටකයේ මූලික ඒකකය වන්නේ ස්නායු සෛලය හෙවත් නියුරෝනයයි (Neuron).`,
+        q24: `නියුරෝනයකට පිටතින් ආවේග ලබාගන්නා කෙටි අතු බෙදුණු කොටස් අනුශාඛිකා (Dendrites) ලෙස හැඳින්වේ. ආවේග පිටතට ගෙන යන්නේ අක්සනයයි.`,
+        q25: `මිනිස් රතු රුධිරාණු ද්විඅවතල තැටියාකාර (Biconcave disc) හැඩයක් ගන්නා අතර එහි න්‍යෂ්ටියක් නොමැත.`
+    };
+
+    function calculateAndDisplayScore() {
+        const studentName = document.getElementById('studentNameInput').value;
+        if(studentName.trim() === "") {
+            alert("කරුණාකර පිළිතුරු පරීක්ෂා කිරීමට පෙර ඔබේ නම ඇතුළත් කරන්න.");
+            document.getElementById('studentNameInput').focus();
+            return;
+        }
+        
+        let score = 0;
+        let answeredQuestions = 0;
+        let totalQuestions = Object.keys(answers).length;
+
+        for (let q in answers) {
+            if (document.querySelector(`input[name="${q}"]:checked`)) {
+                answeredQuestions++;
+            }
+        }
+
+        if(answeredQuestions < totalQuestions) {
+            alert(`ඔබ තවමත් ප්‍රශ්න ${totalQuestions - answeredQuestions} කට පිළිතුරු ලබා දී නොමැත. කරුණාකර සියලුම ප්‍රශ්න සම්පූර්ණ කර නැවත උත්සාහ කරන්න.`);
+            return;
+        }
+
+        document.getElementById('mainSubmitBtn').disabled = true;
+        document.getElementById('mainSubmitBtn').innerText = "පිළිතුරු පරීක්ෂා කෙරිණි";
+
+        for (let q in answers) {
+            let questionBlock = document.getElementById(`qb${q.substring(1)}`);
+            let inputs = questionBlock.querySelectorAll('input');
+            let selected = document.querySelector(`input[name="${q}"]:checked`);
+            let correctValue = answers[q];
+
+            inputs.forEach(input => input.disabled = true);
+
+            let expBox = document.createElement('div');
+            expBox.className = 'explanation-box';
+            expBox.style.display = 'block';
+
+            if (selected.value === correctValue) {
+                score++;
+                expBox.style.backgroundColor = '#e8f5e9';
+                expBox.style.borderLeft = '4px solid #4caf50';
+                expBox.innerHTML = `<span style="color: #2e7d32; font-size: 16px;"><b>✔ නිවැරදියි!</b></span><br><b>විද්‍යාත්මක විවරණය:</b> ${explanations[q]}`;
+            } else {
+                expBox.style.backgroundColor = '#ffebee';
+                expBox.style.borderLeft = '4px solid #f44336';
+                expBox.innerHTML = `<span style="color: #c62828; font-size: 16px;"><b>✘ වැරදියි! නිවැරදි පිළිතුර: (${correctValue})</b></span><br><b>විද්‍යාත්මක විවරණය:</b> ${explanations[q]}`;
+            }
+            questionBlock.appendChild(expBox);
+        }
+
+        const resultBox = document.getElementById('result-box');
+        resultBox.style.display = 'block';
+        resultBox.style.backgroundColor = '#d4edda';
+        resultBox.style.color = '#155724';
+        resultBox.style.borderColor = '#c3e6cb';
+        resultBox.innerHTML = `ආයුබෝවන් ${studentName}, ඔබගේ ප්‍රතිඵලය: ${totalQuestions} න් ${score} යි. <br><br><i>කරුණාකර පහළට ගොස් හරි/වැරදි පිළිතුරු අධ්‍යයනය කරන්න.</i>`;
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

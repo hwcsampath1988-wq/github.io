@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 ශ්‍රේණිය | 2 පාඩම - ප්‍රභාසංශ්ලේෂණය | ආදර්ශ ප්‍රශ්න පත්‍රය</title>
+    <style>
+        body { font-family: 'Abhaya Libre', 'Iskoola Pota', Arial, sans-serif; background-color: #f0f4f8; color: #2c3e50; line-height: 1.6; margin: 0; padding: 20px; }
+        .paper-container { max-width: 900px; margin: 0 auto; background: #ffffff; padding: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 8px; }
+        .header { text-align: center; border-bottom: 3px solid #34495e; padding-bottom: 20px; margin-bottom: 30px; }
+        .header h1 { margin: 0; font-size: 24px; color: #27ae60; }
+        .header h2 { margin: 10px 0 0 0; font-size: 18px; font-weight: normal; }
+        .instructions { font-style: italic; margin-bottom: 20px; background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; }
+        .student-info { background-color: #fcf3cf; padding: 20px; border-radius: 5px; margin-bottom: 30px; border: 1px solid #f1c40f; }
+        .student-info label { font-weight: bold; font-size: 18px; }
+        .student-info input[type="text"] { width: 100%; padding: 10px; margin-top: 10px; font-size: 16px; border: 1px solid #bdc3c7; border-radius: 4px; box-sizing: border-box; }
+        .question-block { margin-bottom: 35px; page-break-inside: avoid; border-bottom: 1px dashed #ecf0f1; padding-bottom: 15px; }
+        .question-text { font-weight: bold; font-size: 17px; margin-bottom: 15px; }
+        .options-container { margin-left: 20px; }
+        .option-label { display: block; margin-bottom: 10px; cursor: pointer; padding: 5px; border-radius: 4px; transition: background-color 0.2s; }
+        .option-label:hover { background-color: #f1f2f6; }
+        input[type="radio"] { margin-right: 10px; transform: scale(1.2); }
+        .explanation-box { display: none; margin-top: 15px; padding: 15px; border-radius: 5px; font-size: 15px; line-height: 1.6; }
+        .submit-btn { display: block; width: 100%; padding: 15px; background-color: #2980b9; color: white; border: none; font-size: 18px; font-weight: bold; cursor: pointer; border-radius: 5px; margin-top: 40px; transition: background-color 0.3s; }
+        .submit-btn:hover { background-color: #1a5276; }
+        .submit-btn:disabled { background-color: #95a5a6; cursor: not-allowed; }
+        #result-box { display: none; text-align: center; margin-top: 30px; padding: 20px; border-radius: 5px; font-size: 20px; font-weight: bold; }
+        .footer { text-align: center; margin-top: 50px; padding-top: 20px; border-top: 2px solid #bdc3c7; }
+        .footer p { margin: 5px 0; font-size: 18px; }
+        .footer span { font-size: 14px; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+
+<div class="paper-container">
+    <div class="header">
+        <h1>11 ශ්‍රේණිය | 2 පාඩම - ප්‍රභාසංශ්ලේෂණය</h1>
+        <h2>බහුවරණ ප්‍රශ්න 25 කින් යුත් ඇගයීම</h2>
+    </div>
+
+    <div class="instructions">
+        * "පිළිතුරු පරීක්ෂා කරන්න" බොත්තම එබූ පසු ඔබට නිවැරදි පිළිතුරු සහ විද්‍යාත්මක පැහැදිලි කිරීම් බලාගත හැක.
+    </div>
+
+    <div class="student-info">
+        <label for="studentNameInput">ශිෂ්‍යයාගේ නම:</label>
+        <input type="text" id="studentNameInput" placeholder="ඔබේ සම්පූර්ණ නම මෙහි ඇතුළත් කරන්න" required>
+    </div>
+
+    <form id="quizForm">
+
+        <div class="question-block" id="qb1"><div class="question-text">01. ප්‍රභාසංශ්ලේෂණය ක්‍රියාවලියේදී ප්‍රධාන වශයෙන් භාවිත වන අමුද්‍රව්‍ය 2 මොනවාද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q1" value="1"> (1) ඔක්සිජන් සහ ජලය</label><label class="option-label"><input type="radio" name="q1" value="2"> (2) කාබන් ඩයොක්සයිඩ් සහ ජලය</label><label class="option-label"><input type="radio" name="q1" value="3"> (3) ග්ලූකෝස් සහ ඔක්සිජන්</label><label class="option-label"><input type="radio" name="q1" value="4"> (4) කාබන් ඩයොක්සයිඩ් සහ ග්ලූකෝස්</label></div></div>
+        
+        <div class="question-block" id="qb2"><div class="question-text">02. ප්‍රභාසංශ්ලේෂණයේ සමීකරණය නිවැරදිව නිරූපණය කර ඇති වරණය තෝරන්න.</div><div class="options-container"><label class="option-label"><input type="radio" name="q2" value="1"> (1) 6CO2 + 6H2O &rarr; C6H12O6 + 6O2</label><label class="option-label"><input type="radio" name="q2" value="2"> (2) 6O2 + C6H12O6 &rarr; 6CO2 + 6H2O</label><label class="option-label"><input type="radio" name="q2" value="3"> (3) CO2 + H2O &rarr; CH4 + O2</label><label class="option-label"><input type="radio" name="q2" value="4"> (4) 6CO2 + 6O2 &rarr; C6H12O6 + 6H2O</label></div></div>
+
+        <div class="question-block" id="qb3"><div class="question-text">03. ප්‍රභාසංශ්ලේෂණයේදී සෑදෙන ප්‍රධාන ඵලය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q3" value="1"> (1) ඔක්සිජන්</label><label class="option-label"><input type="radio" name="q3" value="2"> (2) පිෂ්ටය</label><label class="option-label"><input type="radio" name="q3" value="3"> (3) ජලය</label><label class="option-label"><input type="radio" name="q3" value="4"> (4) ග්ලූකෝස්</label></div></div>
+
+        <div class="question-block" id="qb4"><div class="question-text">04. ශාක පත්‍රවල හරිතලව වැඩිපුරම පිහිටා ඇති පටකය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q4" value="1"> (1) ස්පොන්ජි මෘදුස්තරය</label><label class="option-label"><input type="radio" name="q4" value="2"> (2) යටි අපිචර්මය</label><label class="option-label"><input type="radio" name="q4" value="3"> (3) තාලිස මෘදුස්තරය</label><label class="option-label"><input type="radio" name="q4" value="4"> (4) වාහිනී පටකය</label></div></div>
+
+        <div class="question-block" id="qb5"><div class="question-text">05. ශාක පත්‍රයක් ප්‍රභාසංශ්ලේෂණයට දක්වන බාහිර අනුවර්තනයක් නොවන්නේ කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q5" value="1"> (1) පත්‍ර තලය පළල් වී තිබීම.</label><label class="option-label"><input type="radio" name="q5" value="2"> (2) පත්‍ර එකිනෙකට නොවැසෙන සේ කඳ මත සැකසී තිබීම (පත්‍ර මොසෙයික සැකැස්ම).</label><label class="option-label"><input type="radio" name="q5" value="3"> (3) පත්‍ර තලය ඉතා ඝනකම් වීම.</label><label class="option-label"><input type="radio" name="q5" value="4"> (4) පත්‍ර නටුවක් මඟින් කඳට සවි වී තිබීම.</label></div></div>
+
+        <div class="question-block" id="qb6"><div class="question-text">06. පත්‍රයක පිෂ්ටය තිබේදැයි බැලීමේ පරීක්ෂණයේදී පත්‍රය ජලයේ තම්බනු ලබන්නේ ඇයි?</div><div class="options-container"><label class="option-label"><input type="radio" name="q6" value="1"> (1) හරිතප්‍රද ඉවත් කිරීමට</label><label class="option-label"><input type="radio" name="q6" value="2"> (2) සෛල බිත්ති සහ සෛල පටල බිඳ හෙලීමට</label><label class="option-label"><input type="radio" name="q6" value="3"> (3) පිෂ්ටය දියකර හැරීමට</label><label class="option-label"><input type="radio" name="q6" value="4"> (4) ඇල්කොහොල් අවශෝෂණය වේගවත් කිරීමට</label></div></div>
+
+        <div class="question-block" id="qb7"><div class="question-text">07. පිෂ්ට පරීක්ෂාවේදී පත්‍රයෙන් හරිතප්‍රද ඉවත් කිරීම සඳහා භාවිතා කරන රසායනික ද්‍රව්‍යය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q7" value="1"> (1) අයඩීන්</label><label class="option-label"><input type="radio" name="q7" value="2"> (2) පොටෑසියම් හයිඩ්‍රොක්සයිඩ්</label><label class="option-label"><input type="radio" name="q7" value="3"> (3) එතිල් මද්‍යසාරය</label><label class="option-label"><input type="radio" name="q7" value="4"> (4) හයිඩ්‍රොක්ලෝරික් අම්ලය</label></div></div>
+
+        <div class="question-block" id="qb8"><div class="question-text">08. පත්‍රය මද්‍යසාර ද්‍රාවණයක දමා තැම්බීමේදී සෘජුවම බන්සන් දාහකයෙන් රත් නොකර ජල තාපකයක් (Water bath) භාවිතා කරන්නේ ඇයි?</div><div class="options-container"><label class="option-label"><input type="radio" name="q8" value="1"> (1) මද්‍යසාරවල තාපාංකය ජලයට වඩා වැඩි නිසා</label><label class="option-label"><input type="radio" name="q8" value="2"> (2) පත්‍රය පිළිස්සීම වළක්වා ගැනීමට</label><label class="option-label"><input type="radio" name="q8" value="3"> (3) මද්‍යසාර ඉතා ඉක්මනින් ගිනිගන්නාසුලු ද්‍රව්‍යයක් බැවින්</label><label class="option-label"><input type="radio" name="q8" value="4"> (4) පත්‍රයට සමසේ තාපය ලබා දීමට</label></div></div>
+
+        <div class="question-block" id="qb9"><div class="question-text">09. පිෂ්ටය ඇති බව තහවුරු වූ පත්‍රයකට අයඩීන් බිංදු කිහිපයක් දැමූ විට ලැබෙන වර්ණය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q9" value="1"> (1) ගඩොල් රතු</label><label class="option-label"><input type="radio" name="q9" value="2"> (2) නිල්-දම් පැහැය</label><label class="option-label"><input type="radio" name="q9" value="3"> (3) කහ පැහැය</label><label class="option-label"><input type="radio" name="q9" value="4"> (4) දුඹුරු පැහැය</label></div></div>
+
+        <div class="question-block" id="qb10"><div class="question-text">10. යම් පරීක්ෂණයක් ආරම්භ කිරීමට පෙර ශාකයක් අඳුරේ තැබීමෙන් අපේක්ෂා කරන මූලික අරමුණ කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q10" value="1"> (1) ශ්වසනය නතර කිරීම</label><label class="option-label"><input type="radio" name="q10" value="2"> (2) හරිතප්‍රද ප්‍රමාණය වැඩි කිරීම</label><label class="option-label"><input type="radio" name="q10" value="3"> (3) පත්‍ර තුළ කලින් සාදා ගබඩා කර තිබූ පිෂ්ටය ඉවත් කිරීම (නිරාපිෂ්ට කිරීම)</label><label class="option-label"><input type="radio" name="q10" value="4"> (4) ජලය වාෂ්ප වීම වැළැක්වීම</label></div></div>
+
+        <div class="question-block" id="qb11"><div class="question-text">11. ප්‍රභාසංශ්ලේෂණය සඳහා ආලෝකය අවශ්‍ය බව පෙන්වන පරීක්ෂණයේදී පත්‍රයේ යම් කොටසක් වසා තැබීමට භාවිතා කරන්නේ කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q11" value="1"> (1) පාරදෘශ්‍ය පොලිතින් එකක්</label><label class="option-label"><input type="radio" name="q11" value="2"> (2) සුදු කඩදාසියක්</label><label class="option-label"><input type="radio" name="q11" value="3"> (3) කළු කඩදාසියක් හෝ තහඩුවක්</label><label class="option-label"><input type="radio" name="q11" value="4"> (4) තෙත් රෙදි කැබැල්ලක්</label></div></div>
+
+        <div class="question-block" id="qb12"><div class="question-text">12. ප්‍රභාසංශ්ලේෂණය සඳහා කාබන් ඩයොක්සයිඩ් අවශ්‍ය බව පෙන්වන පරීක්ෂණයේදී බෝතලය තුළ වාතයේ ඇති CO2 උරා ගැනීම සඳහා දමන රසායනික ද්‍රව්‍යය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q12" value="1"> (1) සෝඩියම් ක්ලෝරයිඩ්</label><label class="option-label"><input type="radio" name="q12" value="2"> (2) පොටෑසියම් හයිඩ්‍රොක්සයිඩ් (KOH)</label><label class="option-label"><input type="radio" name="q12" value="3"> (3) නිර්ජලීය කොපර් සල්ෆේට්</label><label class="option-label"><input type="radio" name="q12" value="4"> (4) කැල්සියම් කාබනේට්</label></div></div>
+
+        <div class="question-block" id="qb13"><div class="question-text">13. ප්‍රභාසංශ්ලේෂණයේදී ඔක්සිජන් වායුව නිදහස් වන බව පෙන්වීමේ පරීක්ෂණය සඳහා බහුලවම යොදාගන්නා ශාකය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q13" value="1"> (1) කෝලියස්</label><label class="option-label"><input type="radio" name="q13" value="2"> (2) අරලිය</label><label class="option-label"><input type="radio" name="q13" value="3"> (3) හයිඩ්‍රිලා (Hydrilla)</label><label class="option-label"><input type="radio" name="q13" value="4"> (4) ඇක්වා</label></div></div>
+
+        <div class="question-block" id="qb14"><div class="question-text">14. ප්‍රභාසංශ්ලේෂණය සඳහා හරිතප්‍රද අවශ්‍ය බව පෙන්වන පරීක්ෂණය සඳහා තෝරා ගත යුතු වඩාත්ම සුදුසු පත්‍ර වර්ගය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q14" value="1"> (1) සම්පූර්ණයෙන්ම කොළ පැහැති පත්‍රයක්</label><label class="option-label"><input type="radio" name="q14" value="2"> (2) සම්පූර්ණයෙන්ම රතු පැහැති පත්‍රයක්</label><label class="option-label"><input type="radio" name="q14" value="3"> (3) විචිත්‍ර පත්‍රයක් (කොළ පැහැය සහ වෙනත් වර්ණ මිශ්‍ර වූ - උදා: කෝලියස්)</label><label class="option-label"><input type="radio" name="q14" value="4"> (4) කහ පැහැයට හැරුණු වියළි පත්‍රයක්</label></div></div>
+
+        <div class="question-block" id="qb15"><div class="question-text">15. ප්‍රභාසංශ්ලේෂණයේ "ආලෝක ප්‍රතික්‍රියාවේදී" (Light Reaction) සිදුවන ප්‍රධානතම කාර්යය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q15" value="1"> (1) කාබන් ඩයොක්සයිඩ් තිර කිරීම</label><label class="option-label"><input type="radio" name="q15" value="2"> (2) ආලෝක ශක්තිය මඟින් ජල අණු බිඳ හෙලීම (ප්‍රභා විච්ඡේදනය) සහ O2 නිදහස් වීම</label><label class="option-label"><input type="radio" name="q15" value="3"> (3) ග්ලූකෝස් අණු නිපදවීම</label><label class="option-label"><input type="radio" name="q15" value="4"> (4) ග්ලූකෝස් පිෂ්ටය බවට පත්වීම</label></div></div>
+
+        <div class="question-block" id="qb16"><div class="question-text">16. ප්‍රභාසංශ්ලේෂණයෙන් සෑදෙන ග්ලූකෝස්, ශාකයේ අනිත් කොටස් කරා පරිවහනය (Transport) වන්නේ කුමන සංයෝගයක් ලෙසද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q16" value="1"> (1) පිෂ්ටය</label><label class="option-label"><input type="radio" name="q16" value="2"> (2) සෙලියුලෝස්</label><label class="option-label"><input type="radio" name="q16" value="3"> (3) සුක්‍රෝස්</label><label class="option-label"><input type="radio" name="q16" value="4"> (4) මෝල්ටෝස්</label></div></div>
+
+        <div class="question-block" id="qb17"><div class="question-text">17. අතිරික්ත ග්ලූකෝස් ශාකය තුළ දිගුකාලීනව සංචිත කර තබාගන්නේ කුමන ස්වරූපයෙන්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q17" value="1"> (1) පිෂ්ටය</label><label class="option-label"><input type="radio" name="q17" value="2"> (2) සුක්‍රෝස්</label><label class="option-label"><input type="radio" name="q17" value="3"> (3) ලයිපේස්</label><label class="option-label"><input type="radio" name="q17" value="4"> (4) ප්‍රෝටීන්</label></div></div>
+
+        <div class="question-block" id="qb18"><div class="question-text">18. ප්‍රභාසංශ්ලේෂණයේ ශීඝ්‍රතාව කෙරෙහි බලපාන "සීමාකාරී සාධකයක්" (Limiting factor) නොවන්නේ පහත සඳහන් කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q18" value="1"> (1) ආලෝක තීව්‍රතාව</label><label class="option-label"><input type="radio" name="q18" value="2"> (2) කාබන් ඩයොක්සයිඩ් සාන්ද්‍රණය</label><label class="option-label"><input type="radio" name="q18" value="3"> (3) උෂ්ණත්වය</label><label class="option-label"><input type="radio" name="q18" value="4"> (4) ඔක්සිජන් සාන්ද්‍රණය</label></div></div>
+
+        <div class="question-block" id="qb19"><div class="question-text">19. වායුව හුවමාරු වීම සඳහා පත්‍රයේ ඇති පුටිකා (Stomata) විවෘත වීම හා වැසීම පාලනය කරන සෛල මොනවාද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q19" value="1"> (1) අපිචර්ම සෛල</label><label class="option-label"><input type="radio" name="q19" value="2"> (2) මුර සෛල (Guard cells)</label><label class="option-label"><input type="radio" name="q19" value="3"> (3) සහකාර සෛල</label><label class="option-label"><input type="radio" name="q19" value="4"> (4) ස්පොන්ජි සෛල</label></div></div>
+
+        <div class="question-block" id="qb20"><div class="question-text">20. මුර සෛල වල දක්නට ලැබෙන, නමුත් පත්‍රයේ අනෙකුත් සාමාන්‍ය අපිචර්ම සෛල වල දැකගත නොහැකි සෛල ඉන්ද්‍රියිකාව කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q20" value="1"> (1) මයිටොකොන්ඩ්‍රියා</label><label class="option-label"><input type="radio" name="q20" value="2"> (2) න්‍යෂ්ටිය</label><label class="option-label"><input type="radio" name="q20" value="3"> (3) හරිතලව (Chloroplasts)</label><label class="option-label"><input type="radio" name="q20" value="4"> (4) රික්තකය</label></div></div>
+
+        <div class="question-block" id="qb21"><div class="question-text">21. ශාක පත්‍රවල ඉහළ අපිචර්මයට වඩා පහළ (යටි) අපිචර්මයේ පුටිකා සංඛ්‍යාව වැඩි වීමට ප්‍රධාන හේතුව කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q21" value="1"> (1) CO2 ලබා ගැනීම වේගවත් කිරීමට</label><label class="option-label"><input type="radio" name="q21" value="2"> (2) ඍජු සූර්යාලෝකය වැටීමෙන් අධිකව ජලය වාෂ්ප වීම (උත්ස්වේදනය) අවම කිරීමට</label><label class="option-label"><input type="radio" name="q21" value="3"> (3) පත්‍රයේ බර සමතුලිත කිරීමට</label><label class="option-label"><input type="radio" name="q21" value="4"> (4) කෘමීන්ගෙන් ආරක්ෂා වීමට</label></div></div>
+
+        <div class="question-block" id="qb22"><div class="question-text">22. ශාකයක් තුළ ප්‍රභාසංශ්ලේෂණය සිදුවන විට, වායුගෝලයේ ඇති කාබන් ඩයොක්සයිඩ් පත්‍රය තුළට ඇතුළු වන ක්‍රියාවලිය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q22" value="1"> (1) ආස්‍රැතිය</label><label class="option-label"><input type="radio" name="q22" value="2"> (2) විසරණය (Diffusion)</label><label class="option-label"><input type="radio" name="q22" value="3"> (3) සක්‍රීය පරිවහනය</label><label class="option-label"><input type="radio" name="q22" value="4"> (4) උත්ස්වේදනය</label></div></div>
+
+        <div class="question-block" id="qb23"><div class="question-text">23. හරිතප්‍රද අණුවක් නිර්මාණය වීම සඳහා ශාකයට අත්‍යවශ්‍ය වන ප්‍රධානතම ඛනිජ ලවණය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q23" value="1"> (1) පොටෑසියම් (K)</label><label class="option-label"><input type="radio" name="q23" value="2"> (2) යකඩ (Fe)</label><label class="option-label"><input type="radio" name="q23" value="3"> (3) කැල්සියම් (Ca)</label><label class="option-label"><input type="radio" name="q23" value="4"> (4) මැග්නීසියම් (Mg)</label></div></div>
+
+        <div class="question-block" id="qb24"><div class="question-text">24. ප්‍රභාසංශ්ලේෂණ ක්‍රියාවලිය වැඩිම කාර්යක්ෂමතාවයකින් සිදුවන්නේ කුමන ආලෝක වර්ණ යටතේද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q24" value="1"> (1) කොළ සහ කහ</label><label class="option-label"><input type="radio" name="q24" value="2"> (2) රතු සහ නිල්</label><label class="option-label"><input type="radio" name="q24" value="3"> (3) නිල් සහ කොළ</label><label class="option-label"><input type="radio" name="q24" value="4"> (4) කහ සහ තැඹිලි</label></div></div>
+
+        <div class="question-block" id="qb25"><div class="question-text">25. පෘථිවියේ වායුගෝලයේ ඔක්සිජන් වායු ප්‍රතිශතය 21% ක් ලෙස නියතව පවත්වා ගැනීමට ප්‍රධාන වශයෙන්ම දායක වන ස්වාභාවික ක්‍රියාවලිය කුමක්ද?</div><div class="options-container"><label class="option-label"><input type="radio" name="q25" value="1"> (1) සතුන්ගේ ශ්වසනය</label><label class="option-label"><input type="radio" name="q25" value="2"> (2) ඛනිජ තෙල් දහනය</label><label class="option-label"><input type="radio" name="q25" value="3"> (3) ප්‍රභාසංශ්ලේෂණය</label><label class="option-label"><input type="radio" name="q25" value="4"> (4) ජල චක්‍රය</label></div></div>
+
+        <button type="button" id="mainSubmitBtn" class="submit-btn" onclick="calculateAndDisplayScore()">පිළිතුරු පරීක්ෂා කරන්න</button>
+        <div id="result-box"></div>
+    </form>
+
+    <div class="footer">
+        <p><strong>සැකසුම: චතුරංග සම්පත් (B.Sc)</strong></p>
+        <span>රසායන විද්‍යා උත්තර පත්‍ර පරීක්ෂක</span>
+    </div>
+</div>
+
+<script>
+    const answers = {
+        q1: "2", q2: "1", q3: "4", q4: "3", q5: "3", q6: "2", q7: "3", q8: "3", q9: "2", q10: "3",
+        q11: "3", q12: "2", q13: "3", q14: "3", q15: "2", q16: "3", q17: "1", q18: "4", q19: "2", q20: "3",
+        q21: "2", q22: "2", q23: "4", q24: "2", q25: "3"
+    };
+
+    const explanations = {
+        q1: `ප්‍රභාසංශ්ලේෂණය යනු හරිත ශාක විසින් සූර්යාලෝකය ඇති විට වායුගෝලයෙන් CO2 ද, පසෙන් ජලය (H2O) ද ලබාගෙන ආහාර නිපදවීමේ ක්‍රියාවලියයි.`,
+        q2: `නිවැරදි සමීකරණය: 6CO<sub>2</sub> + 6H<sub>2</sub>O &rarr; C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub>. කාබන් ඩයොක්සයිඩ් හා ජලය එක්වී ග්ලූකෝස් සහ ඔක්සිජන් නිපදවේ.`,
+        q3: `ප්‍රභාසංශ්ලේෂණයේ ප්‍රධාන ඵලය ග්ලූකෝස් (Glucose) වන අතර, අතුරු ඵලයක් ලෙස ඔක්සිජන් වායුව පිටවේ.`,
+        q4: `පත්‍රයේ උඩ අපිචර්මයට මඳක් පහළින් ඇති දිගටි සෛල ස්තරය තාලිස මෘදුස්තරය (Palisade mesophyll) වේ. හිරු එළිය වැඩිපුරම වැටෙන මෙහි හරිතලව බහුලව ඇත.`,
+        q5: `පත්‍ර තලය තුනී වීම ආලෝකය විනිවිද යාමට පහසුවක් වන බැවින් එය අනුවර්තනයකි. පත්‍රය ඝනකම් වීම ප්‍රභාසංශ්ලේෂණයට බාධාවකි.`,
+        q6: `පත්‍රය ජලයේ තම්බන්නේ පත්‍රයේ සෛල බිත්ති සහ සෛල පටල බිඳ හෙලා, පත්‍රය තුළට අයඩීන් ගමන් කිරීමට පහසු කිරීමටයි.`,
+        q7: `එතිල් මද්‍යසාරය (Alcohol) මඟින් පත්‍රයේ ඇති කොළ පැහැති හරිතප්‍රද වර්ණකය දියකර ඉවත් කර පත්‍රය අවර්ණ කරයි.`,
+        q8: `මද්‍යසාර යනු ඉතා ඉක්මනින් ගිනිගන්නාසුලු ද්‍රව්‍යයකි (Highly flammable). එබැවින් ගින්නකට සෘජුවම නොඅල්ලා ජලය සහිත බඳුනක් හරහා රත් කරනු ලැබේ.`,
+        q9: `පිෂ්ටය සහ අයඩීන් එකිනෙක ප්‍රතික්‍රියා කළ විට සෑම විටම තද නිල්-දම් (Blue-black) වර්ණයක් ලැබේ.`,
+        q10: `අඳුරේ තැබූ විට ප්‍රභාසංශ්ලේෂණය නතර වන බැවින්, පත්‍රවල කලින් පැවති පිෂ්ටය ශාකයේ වෙනත් ස්ථානවලට ගමන් කරයි. මෙය නිරාපිෂ්ට කිරීම (Destarching) ලෙස හැඳින්වේ.`,
+        q11: `කළු කඩදාසියකින් (Black paper) පත්‍රයේ කොටසක් වැසූ විට එම කොටසට ආලෝකය නොලැබෙන බැවින් එහි පිෂ්ටය සෑදෙන්නේ නැත.`,
+        q12: `පොටෑසියම් හයිඩ්‍රොක්සයිඩ් (KOH) ජලීය ද්‍රාවණයට හෝ පෙති වලට, අවට වාතයේ ඇති කාබන් ඩයොක්සයිඩ් සම්පූර්ණයෙන්ම අවශෝෂණය කරගැනීමේ හැකියාව ඇත.`,
+        q13: `හයිඩ්‍රිලා (Hydrilla) යනු ජලයේ ගිලී වැඩෙන ශාකයකි. ජලය යටින් බුබුළු ලෙස ඔක්සිජන් පිටවීම පෙන්වීමට මෙය වඩාත් පහසුය.`,
+        q14: `කෝලියස් (Coleus) වැනි විචිත්‍ර පත්‍රයක කොළ පැහැති කොටස්වල හරිතප්‍රද ඇති අතර රතු/සුදු කොටස්වල නැත. හරිතප්‍රද ඇති තැන පමණක් පිෂ්ටය සෑදෙන බව මින් පෙන්විය හැක.`,
+        q15: `ප්‍රභාසංශ්ලේෂණයේ ආලෝක ප්‍රතික්‍රියාවේදී සූර්ය ශක්තිය යොදාගෙන ජල අණු බිඳ ඔක්සිජන් වායුව නිදහස් කරයි (Photolysis of water).`,
+        q16: `ග්ලූකෝස් ජලයේ දියවී ප්‍රතික්‍රියා කරන බැවින්, ප්ලෝයම පටකය ඔස්සේ පරිවහනය වීමට පහසු වන සේ එය සුක්‍රෝස් (Sucrose) බවට පත්කෙරේ.`,
+        q17: `සුක්‍රෝස් ලෙස ගමන් කරන ආහාර, ශාකයේ අල, කඳන් හෝ මුල් වල දිගුකාලීනව තැන්පත් කරන්නේ ජලයේ අද්‍රාව්‍ය පිෂ්ටය (Starch) ලෙසටය.`,
+        q18: `ආලෝකය, CO2 සහ උෂ්ණත්වය යන සාධක ප්‍රමාණවත් නොවීම නිසා ප්‍රභාසංශ්ලේෂණ වේගය අඩුවිය හැක (සීමාකාරී සාධක). ඔක්සිජන් යනු මින් පිටවන වායුවක් බැවින් එය බලපාන්නේ නැත.`,
+        q19: `පුටිකා කුහරය වටකරගෙන සිටින අර්ධ-චන්ද්‍රාකාර සෛල දෙක මුර සෛල (Guard cells) වේ. මේවා ඇකිලීම හා ප්‍රසාරණය වීමෙන් පුටිකාව විවෘත වේ/වැසේ.`,
+        q20: `සාමාන්‍ය අපිචර්ම සෛලවල හරිතලව නොමැත. නමුත් පුටිකා වටා ඇති මුර සෛල වල හරිතලව පිහිටා ඇති අතර ඒවාට ප්‍රභාසංශ්ලේෂණය කළ හැක.`,
+        q21: `උඩ අපිචර්මය මතට සෘජුවම හිරු එළිය පතිත වේ. එහි පුටිකා තිබුණහොත් උත්ස්වේදනයෙන් විශාල ජල ප්‍රමාණයක් හානි වේ. එය වැළැක්වීමට පුටිකා පහළින් පිහිටයි.`,
+        q22: `වායුගෝලයේ CO2 සාන්ද්‍රණය පත්‍රය තුළ CO2 සාන්ද්‍රණයට වඩා වැඩි බැවින්, වැඩි තැන සිට අඩු තැනට වායුව ගමන් කිරීම විසරණයයි (Diffusion).`,
+        q23: `හරිතප්‍රද අණුවක (Chlorophyll molecule) මධ්‍යයේ ඇති ප්‍රධාන මූලද්‍රව්‍යය මැග්නීසියම් (Mg) වේ. මැග්නීසියම් ඌන වූ විට පත්‍ර කහ පැහැ වේ.`,
+        q24: `දෘශ්‍ය ආලෝකයේ වර්ණ අතුරින් ප්‍රභාසංශ්ලේෂණය වේගවත්ව සිදුවන්නේ රතු (Red) සහ නිල් (Blue) ආලෝක කිරණ යටතේදීය. කොළ පැහැය පරාවර්තනය කරයි.`,
+        q25: `පෘථිවියේ සියලුම ජීවීන් ශ්වසනයේදී ඔක්සිජන් ලබාගත්තද, වායුගෝලයට අඛණ්ඩව ඔක්සිජන් මුදාහරිමින් එය සමතුලිත කරන්නේ ශාක ප්‍රභාසංශ්ලේෂණය මඟිනි.`
+    };
+
+    function calculateAndDisplayScore() {
+        const studentName = document.getElementById('studentNameInput').value;
+        if(studentName.trim() === "") {
+            alert("කරුණාකර පිළිතුරු පරීක්ෂා කිරීමට පෙර ඔබේ නම ඇතුළත් කරන්න.");
+            document.getElementById('studentNameInput').focus();
+            return;
+        }
+        
+        let score = 0;
+        let answeredQuestions = 0;
+        let totalQuestions = Object.keys(answers).length;
+
+        for (let q in answers) {
+            if (document.querySelector(`input[name="${q}"]:checked`)) {
+                answeredQuestions++;
+            }
+        }
+
+        if(answeredQuestions < totalQuestions) {
+            alert(`ඔබ තවමත් ප්‍රශ්න ${totalQuestions - answeredQuestions} කට පිළිතුරු ලබා දී නොමැත. කරුණාකර සියලුම ප්‍රශ්න සම්පූර්ණ කර නැවත උත්සාහ කරන්න.`);
+            return;
+        }
+
+        document.getElementById('mainSubmitBtn').disabled = true;
+        document.getElementById('mainSubmitBtn').innerText = "පිළිතුරු පරීක්ෂා කෙරිණි";
+
+        for (let q in answers) {
+            let questionBlock = document.getElementById(`qb${q.substring(1)}`);
+            let inputs = questionBlock.querySelectorAll('input');
+            let selected = document.querySelector(`input[name="${q}"]:checked`);
+            let correctValue = answers[q];
+
+            inputs.forEach(input => input.disabled = true);
+
+            let expBox = document.createElement('div');
+            expBox.className = 'explanation-box';
+            expBox.style.display = 'block';
+
+            if (selected.value === correctValue) {
+                score++;
+                expBox.style.backgroundColor = '#e8f5e9';
+                expBox.style.borderLeft = '4px solid #4caf50';
+                expBox.innerHTML = `<span style="color: #2e7d32; font-size: 16px;"><b>✔ නිවැරදියි!</b></span><br><b>විද්‍යාත්මක විවරණය:</b> ${explanations[q]}`;
+            } else {
+                expBox.style.backgroundColor = '#ffebee';
+                expBox.style.borderLeft = '4px solid #f44336';
+                expBox.innerHTML = `<span style="color: #c62828; font-size: 16px;"><b>✘ වැරදියි! නිවැරදි පිළිතුර: (${correctValue})</b></span><br><b>විද්‍යාත්මක විවරණය:</b> ${explanations[q]}`;
+            }
+            questionBlock.appendChild(expBox);
+        }
+
+        const resultBox = document.getElementById('result-box');
+        resultBox.style.display = 'block';
+        resultBox.style.backgroundColor = '#d4edda';
+        resultBox.style.color = '#155724';
+        resultBox.style.borderColor = '#c3e6cb';
+        resultBox.innerHTML = `ආයුබෝවන් ${studentName}, ඔබගේ ප්‍රතිඵලය: ${totalQuestions} න් ${score} යි. <br><br><i>කරුණාකර පහළට ගොස් හරි/වැරදි පිළිතුරු අධ්‍යයනය කරන්න.</i>`;
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
